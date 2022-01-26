@@ -1,0 +1,562 @@
+@import "utilities.css";
+body{
+    background-image: url(/images/bg.png);
+    /* background-origin: border-box; */
+    position: absolute;
+    height: 100%;
+    width: 1500px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* background-position: left; */
+    /* background-position-x: 402px;
+    background-position-y: 1000px; */
+}
+.rectangle{
+    position: absolute;
+    width: 55%;
+    height: 80%;
+    left: 15%;
+    top: 15%;
+    background: linear-gradient(180deg, rgba(75, 14, 14, 0) 0%, #881212 71.87%);
+    border-radius: 5%;
+    transform: rotate(-19.76deg);
+}
+.rectangle1{
+    position: absolute;
+    width: 70%;
+    height: 75%;
+    left: 55%;
+    top: 20%;
+    background: linear-gradient(180deg, rgba(75, 14, 14, 0) 0%, #881212 71.87%);
+    border-radius: 5%;
+    transform: rotate(-19.76deg);
+}
+.title{
+    width: 6%;
+    padding-left: 47%;
+}
+header{
+    width: 100%;
+    border: solid rgba(0, 0, 0, 0.38) 8px;
+}
+.logo img{
+    height: 80px;
+    margin-right: 3rem;
+}
+.head{
+    position: absolute;
+    font-family: 'Josefin Sans';
+    font-weight: normal;
+    letter-spacing: -0.017em;
+    width: 525px;
+    left: 490px;
+    text-align: center;
+    align-items: center;
+    font-style: normal;
+    font-size: 50px;
+    height: 170px;
+    background: rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+.full{
+    width: 1520px;
+}
+.container{
+    width: 1520px;
+}
+.navs a{
+    font-family: 'Raleway',sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-right: 2.5rem;
+    font-size: 1.5rem;
+}
+.navs a:hover{
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background:#fff;
+}
+header nav .space{
+    justify-content: space-between;
+}
+.diamond{
+    display: flex;
+    
+}
+.diamond div{
+    position: relative;
+    color: white;
+    height: 100px;
+    width: 100px;
+    bottom: -170px;
+    left: 470px;
+    line-height: 15px;
+    text-align: center;
+    margin: 10px 20px;
+}
+.diamond div:before {
+    position: absolute;
+    content: '';
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    transform: rotateX(45deg) rotateZ(45deg);
+    border: solid white 2px;
+    border-radius: 10px;
+}
+.diamond div:after {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    content: '';
+    height: calc(100% - 22px);  /* -22px is 2 * 10px gap on either side - 2px border on either side */
+    width: calc(100% - 22px);  /* -22px is 2 * 10px gap on either side - 2px border on either side */
+    transform: rotateX(45deg) rotateZ(45deg);
+}
+.big-text{
+    font-size: larger;
+}
+.date{
+    align-content: center;
+    width: 425px;
+    height: 56px;
+    bottom: 190px;
+    left: 545px;
+    top:68%;
+    background: rgba(0, 0, 0, 0.39);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    position: absolute;
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+.button {
+    position: absolute;
+    cursor: pointer;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+    color: #ffffff;
+    font-size: 20px;
+    left: 690px;
+    top:77%;
+    height: 10px;
+    bottom: 140px;
+    background: #000000;
+    padding: 10px 20px 27px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+  }
+  .button p{
+      margin-top: -0rem;
+  }
+footer{
+    position: absolute;
+    margin-top: 20rem;
+    width: 100%;
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+footer h2{
+    position:absolute;
+    left:42%;
+    font-size: 2rem;
+    color: white;
+    margin-top: 2rem;
+}
+.socials ul{
+    position: absolute;
+    left:35%;
+    text-align: center;
+    margin-top:5rem;
+}
+.socials li{
+    display: inline; 
+    margin: 1rem;
+}
+@media only screen and (max-width: 1400px){
+    .logo img{
+        height: 15rem;
+        margin-right: 3rem;
+    }
+    .navs{
+        white-space: nowrap;
+    }
+    .navs a{
+        font-family: 'Raleway',sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+    .navs a:hover{
+        color: #ff7a59;
+        border: #ff7a59 solid 1px;
+        background:#fff;
+    }
+    footer{
+        width: 90%;
+        margin-top:110vh;
+        display: flex;
+    }
+    .button{
+        height: fit-content;
+        left: 55%;
+        margin-top: 77rem;
+        width: 16rem;
+        height: 10rem;
+    }
+    .button p{
+        font-size:3.2rem;
+        margin-top: 2rem;
+    }
+    .rectangle{
+        position: absolute;
+        width: 75%;
+        height: 121%;
+        left: 10%;
+        top: 95%;
+    }
+    .rectangle1{
+        position: absolute;
+        width: 75%;
+        height: 141%;
+        left: 33%;
+        top: 105%;
+    }
+    .small_logo img{
+        margin-top: 9rem;
+        height: 25rem;
+        width: 25rem;
+    }
+    .date{
+        font-size: 5rem;
+        margin-top: 55rem;
+        width: 100%;
+        height: 25%;
+        margin-left: -20rem;
+    }
+    .date p{
+        margin-top: 1rem;
+    }
+    .diamond{
+        margin-left: -15rem;
+    }
+    .diamond div{
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin-top: 3rem;
+        margin-left: 5rem;
+    }
+    .diamond span{
+        font-size: 3rem;
+    }
+    .big-text{
+        font-size: 3rem;
+    }
+    .head{
+        margin-left: rem;
+    }
+    .head p{
+        margin-left: 3rem;
+    }
+    footer h2{
+        position:absolute;
+        left:47%;
+        font-size: 5rem;
+        color: white;
+        margin-top: -1rem;
+    }
+    .socials ul{
+        position: absolute;
+        left:49%;
+        text-align: center;
+        margin-top:7rem;
+        margin-bottom: 2rem;
+    }
+    .socials li{
+        display: inline; 
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 1100px){
+    .logo img{
+        height: 15rem;
+        margin-right: 3rem;
+    }
+    .navs{
+        white-space: nowrap;
+    }
+    .navs a{
+        font-family: 'Raleway',sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: 3rem;
+    }
+    .navs a:hover{
+        color: #ff7a59;
+        border: #ff7a59 solid 1px;
+        background:#fff;
+    }
+    footer{
+        width: 90%;
+        margin-top:110vh;
+        display: flex;
+    }
+    .button{
+        font-size: 6rem;
+        height: fit-content;
+        margin-top: 70rem;
+    }
+    .rectangle{
+        position: absolute;
+        width: 75%;
+        height: 101%;
+        left: 10%;
+        top: 85%;
+    }
+    .rectangle1{
+        position: absolute;
+        width: 75%;
+        height: 100%;
+        left: 43%;
+        top: 95%;
+    }
+    .small_logo img{
+        margin-top: 9rem;
+        height: 25rem;
+        width: 25rem;
+    }
+    .date{
+        font-size: 5rem;
+        margin-top: 55rem;
+        width: 100%;
+        height: 20%;
+        margin-left: -20rem;
+    }
+    .diamond{
+        margin-left: -15rem;
+    }
+    .diamond div{
+        position: relative;
+        height: 250px;
+        width: 250px;
+        margin-top: 14rem;
+        margin-left: 5rem;
+    }
+    .diamond span{
+        font-size: 3rem;
+    }
+    .big-text{
+        font-size: 3rem;
+    }
+    .head{
+        margin-left: rem;
+    }
+    .head p{
+        margin-left:18rem;
+    }
+    footer h2{
+        position:absolute;
+        left:47%;
+        font-size: 5rem;
+        color: white;
+        margin-top: -1rem;
+    }
+    .socials ul{
+        position: absolute;
+        left:49%;
+        text-align: center;
+        margin-top:7rem;
+        margin-bottom: 2rem;
+    }
+    .socials li{
+        display: inline; 
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 480px){
+    .logo{
+        height: 100%!important;
+        width: 100%!important;
+        margin-right: 0!important;
+    }
+    .navs{
+        display:none
+    }
+    .rectangle{
+        top: 117rem;
+        width: 55%;
+        height: 60%;
+        left: 43%;
+    }
+    .rectangle1{
+        width: 85%;
+        height: 160%;
+        margin-top: 40%;
+        left: 0;
+        top: 35%;
+    }
+    .logo img{
+        width: 80%;
+        height: 240px;
+    }
+    .title{
+        padding-left: 0;
+        width: 35%;
+        margin-left: 35%;
+    }
+    .head{
+        margin-top: 5rem;
+        width: 100%;
+        height: 85%;
+        margin-left: -31rem;
+    }
+    .head p span{
+        font-size: 100px!important;
+    }
+    .head p{
+        margin-left: 1rem;
+    }
+    .big-text{
+        font-size: 80px;
+    }
+    span{
+        font-size: 40px;
+    }
+    .diamond{
+        margin-left: 3rem;
+    }
+    .diamond div{
+        height: 250px;
+        width: 250px;
+        left: 0;
+        margin-top: 14rem;
+        margin-left: 5rem;
+    }
+    .date{
+        margin-top: 70rem;
+        width: 100%;
+        height: 20%;
+        margin-left: -35rem;
+    }
+    .date p{
+        font-size: 50px!important;
+    }
+    .button{
+        height: fit-content;
+        left: 35%;
+        margin-top: 77rem;
+        width: 16rem;
+        height: 10rem;
+    }
+    .button p{
+        font-size:3.2rem;
+    }
+    footer{
+        width: 90%;
+        margin-top:215vh;
+        display: flex;
+    }
+    .small_logo img{
+        margin-top: 9rem;
+    }
+    footer h2{
+        position:absolute;
+        left:37%;
+        font-size: 5rem;
+        color: white;
+        margin-top: -7rem;
+    }
+    .socials ul{
+        position: absolute;
+        left:38%;
+        text-align: center;
+        margin-top:2rem;
+        margin-bottom: 2rem;
+    }
+    .socials li{
+        display: inline; 
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 380px){
+    .head{
+        margin-top: 5rem;
+        width: 100%;
+        height: 88%;
+        margin-left: -30rem;
+    }
+    footer{
+        width: 90%;
+        height:40%;
+        margin-top:215vh;
+    }
+    footer h2{
+        position:absolute;
+        left:37%;
+        font-size: 5rem;
+        color: white;
+        margin-top: 4rem;
+    }
+    .socials ul{
+        position: absolute;
+        left:38%;
+        text-align: center;
+        margin-top:11rem;
+        margin-bottom: 2rem;
+    }
+    .socials li{
+        display: inline; 
+        margin: 1rem;
+    }
+}
+@media only screen and (max-width: 320px){
+
+    .logo{
+        height: 80%!important;
+        width: 80%!important;
+        margin-right: 0!important;
+    }
+    .title{
+        width: 25%;
+    }
+    .head{
+        width: 80%;
+        height: 50%;
+   margin-left: -29rem;
+    }
+    .head p span{
+        font-size: 80px!important;
+    }
+    span{
+        font-size: 35px;
+    }
+    .diamond div{
+        height: 210px;
+        width: 210px;
+        left: 4%;
+        margin: 350px 42px;
+        line-height: 0px;
+    }
+    .button{
+        font-size: 80px;
+        height: fit-content;
+        left: 35%;
+        top: 265%;
+        margin-top: 10rem;
+    }
+    .date{
+        height: 25%;
+    }
+    footer{
+        margin-top: 38%;
+    }
+}
+
+

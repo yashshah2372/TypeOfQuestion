@@ -1,0 +1,254 @@
+* {box-sizing: border-box;}
+body{
+    background-color: black;
+}
+
+
+.hamburger-menu{
+  color: #fff;
+  font-size: 2rem;
+  display: none; 
+}
+.rectangle{
+    position: absolute;
+width: 55%;
+height: 75%;
+left: 15%;
+top: 15%;
+background: linear-gradient(180deg, rgba(75, 14, 14, 0) 0%, #881212 71.87%);
+border-radius: 5%;
+transform: rotate(-19.76deg);
+}
+.rectangle1{
+position: absolute;
+width: 50%;
+height: 75%;
+left: 55%;
+top: 20%;
+background: linear-gradient(180deg, rgba(75, 14, 14, 0) 0%, #881212 71.87%);
+border-radius: 5%;
+transform: rotate(-19.76deg);
+}
+.heading_faq{
+  margin-top: -5.8rem;
+    color: white;
+    margin-bottom: 50px;
+    padding-left: 12px;
+    padding-top: 12px;
+    font-size: 1.8rem;
+}
+.heading_faq p{
+  font-size: 2rem;
+}
+.accordian__section{
+    position: relative;
+    border-radius: 5px;
+    margin-left: -10px;
+    top:-10%
+}
+.parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navs a{
+    position:relative;
+    font-family: 'Raleway',sans-serif;
+    color: white;
+    text-decoration: none;
+    margin-right: 2.5rem;
+    font-size: 1.5rem;
+
+}
+.navs a:hover{
+    color: #ff7a59;
+    border: #ff7a59 solid 1px;
+    background:#fff;
+}
+nav .space{
+    justify-content: space-between;
+}
+.logo{
+  margin-left: 2rem;
+}
+.accordion {
+  background-color: transparent;
+  color:white;
+  font-family:'Raleway',sans-serif;
+  cursor: pointer;
+  padding: 25px;
+  margin: 0;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+
+.active, .accordion:hover, .accordion:hover::after {
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
+
+.accordion::after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  
+}
+
+
+.active::after {
+  content: "\2212";
+  color: white;
+}
+
+
+.accordion-panel {
+  padding: 0 18px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  background-color: transparent;
+  color: white;
+  font-family: 'Raleway';
+}
+
+.accordion-panel p {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+
+.top{
+    height: 80px;
+    
+}
+
+.row{
+    padding: 50px;
+    height: 500px;
+}
+
+.container-fluid{
+    margin-left: -12px;
+    margin-right: -12px;
+    padding-right: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.socials{
+  color: white;
+  font-family: 'Raleway',sans-serif;
+  position:absolute;
+  top:65rem;
+  margin-left:36rem;
+}
+.socials h2{
+  text-align: center;
+  margin-left: 1.9rem;
+}
+.socials-links ul{
+  position:absolute;
+  top:58rem;
+  margin-left:1rem;
+}
+.social-links li{
+  position: relative;
+  display: inline; 
+  margin-left: 1rem;
+}
+
+@media(max-width:1200px){
+  .navbar{
+      padding: 2rem;
+  }
+}
+
+@media only screen and (max-width:991px) and (min-height:1000px){
+  html{
+      font-size: 85%;
+  }
+  .socials{
+    color: white;
+    font-family: 'Raleway',sans-serif;
+    position:absolute;
+    top:90rem;
+    margin-left:19rem;
+  }
+  .socials h2{
+    text-align: center;
+    margin-left: 1.9rem;
+  }
+  .socials-links ul{
+    position:absolute;
+    top:58rem;
+    margin-left:1rem;
+  }
+  .social-links li{
+    position: relative;
+    display: inline; 
+    margin-left: 1rem;
+  }
+}
+@media(max-width:767px){
+  html{
+    font-size: 55%;
+}
+  .hamburger-menu{
+      display: inline-block;
+      font-size: 5rem !important;
+  }
+  .navs{
+    position: fixed;
+    top: 8%;
+    left: -110%;
+    display: flex ;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: none;
+  }
+  .navs.active{
+    left: 0;
+    background: #fff;
+    color: #000;
+  }
+
+  .navs a{
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #fff;
+    left: -12%;
+    color: #000;
+    border-bottom: 2px solid #000;
+  }
+  .socials{
+    color: white;
+    font-size: 2rem;
+    font-family: 'Raleway',sans-serif;
+    position:absolute;
+    top:100rem;
+    margin-left:7.5rem;
+  }
+  .socials h2{
+    text-align: center;
+    margin-left: 2.8rem;
+  }
+  .socials-links ul{
+    position:absolute;
+    top:58rem;
+    margin-left:1rem;
+  }
+  .social-links li{
+    white-space: nowrap;
+    position: relative;
+    display: inline; 
+    margin-left: 1rem;
+  }
+} 
