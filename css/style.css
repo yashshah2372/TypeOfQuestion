@@ -11,10 +11,16 @@ body{
     /* background-position-x: 402px;
     background-position-y: 1000px; */
 }
+.rules{
+    color:#ffffff;
+    text-align: center;
+    margin-top: 30rem;
+    font-size: 2rem;
+}
 .rectangle{
     position: absolute;
     width: 55%;
-    height: 80%;
+    height: 75%;
     left: 15%;
     top: 15%;
     background: linear-gradient(180deg, rgba(75, 14, 14, 0) 0%, #881212 71.87%);
@@ -23,8 +29,8 @@ body{
 }
 .rectangle1{
     position: absolute;
-    width: 70%;
-    height: 75%;
+    width: 40%;
+    height: 71%;
     left: 55%;
     top: 20%;
     background: linear-gradient(180deg, rgba(75, 14, 14, 0) 0%, #881212 71.87%);
@@ -143,7 +149,7 @@ header nav .space{
     font-family: Josefin Sans;
     color: #ffffff;
     font-size: 20px;
-    left: 690px;
+    left: 605px;
     top:77%;
     height: 10px;
     bottom: 140px;
@@ -155,6 +161,27 @@ header nav .space{
   .button p{
       margin-top: -0rem;
   }
+  .button1 {
+    position: absolute;
+    cursor: pointer;
+    -webkit-border-radius: 10;
+    -moz-border-radius: 10;
+    border-radius: 10px;
+    font-family: Josefin Sans;
+    color: #ffffff;
+    font-size: 20px;
+    left: 805px;
+    top:77%;
+    height: 10px;
+    bottom: 140px;
+    background: #000000;
+    padding: 10px 20px 27px 20px;
+    border: solid #000000 1px;
+    text-decoration: none;
+  }
+  .button1 p{
+      margin-top: -0rem;
+  }
 footer{
     position: absolute;
     margin-top: 20rem;
@@ -164,7 +191,7 @@ footer{
 }
 footer h2{
     position:absolute;
-    left:42%;
+    left:44%;
     font-size: 2rem;
     color: white;
     margin-top: 2rem;
