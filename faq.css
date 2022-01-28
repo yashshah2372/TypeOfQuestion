@@ -11,7 +11,7 @@ body{
 }
 .rectangle{
     position: absolute;
-width: 55%;
+width: 50%;
 height: 75%;
 left: 15%;
 top: 15%;
@@ -21,7 +21,7 @@ transform: rotate(-19.76deg);
 }
 .rectangle1{
 position: absolute;
-width: 50%;
+width: 40%;
 height: 75%;
 left: 55%;
 top: 20%;
@@ -69,7 +69,7 @@ nav .space{
     justify-content: space-between;
 }
 .logo{
-  margin-left: 2rem;
+  margin-left: -4rem;
 }
 .accordion {
   background-color: transparent;
