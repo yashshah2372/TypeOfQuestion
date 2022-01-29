@@ -729,8 +729,8 @@ a {
       color: white;
     }
     .header .menu {
+      float: right;
       clear: none;
-      margin-left: 63rem;
       max-height: none;
       margin-top: -1rem;
     }
