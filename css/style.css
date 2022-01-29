@@ -604,7 +604,7 @@ a {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: #fff;
+    background-color:black;
   }
   
   .header li a {
@@ -714,9 +714,10 @@ a {
     .header {
       font-size: 1.5rem;
       box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-      position: fixed;
+      position: absolute;
       width: 105%;
-      z-index: 3;
+      z-index: -0.5;
+    
     }
     .header li {
       float: left;
@@ -729,7 +730,7 @@ a {
     }
     .header .menu {
       clear: none;
-      margin-left: 65.2rem;
+      margin-left: 63rem;
       max-height: none;
       margin-top: -1rem;
     }
