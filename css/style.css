@@ -11,10 +11,13 @@ body{
     /* background-position-x: 402px;
     background-position-y: 1000px; */
 }
+.rules h2{
+   margin-left: 22rem;
+}
 .rules{
     color:#ffffff;
-    text-align: center;
-    margin-top: 32rem;
+    margin-left: 20rem;
+    margin-top: 35rem;
     font-size: 1.5rem;
 }
 .rectangle{
@@ -170,7 +173,7 @@ header nav .space{
     font-family: Josefin Sans;
     color: #ffffff;
     font-size: 20px;
-    left: 805px;
+    left: 41rem;
     top:77%;
     height: 10px;
     bottom: 140px;
@@ -408,19 +411,19 @@ footer h2{
     }
 }
 @media only screen and (max-width: 480px){
-    .logo{
-        height: 100%!important;
-        width: 100%!important;
+    .logo img{
+        height:10rem;
+        width: 15rem;
         margin-right: 0!important;
     }
     .navs{
         display:none
     }
     .rectangle{
-        top: 117rem;
-        width: 55%;
+        top: 20rem;
+        width: 15rem;
         height: 60%;
-        left: 43%;
+        left: 33%;
     }
     .rectangle1{
         width: 85%;
@@ -428,10 +431,6 @@ footer h2{
         margin-top: 40%;
         left: 0;
         top: 35%;
-    }
-    .logo img{
-        width: 80%;
-        height: 240px;
     }
     .title{
         padding-left: 0;
@@ -612,6 +611,7 @@ a {
     padding: 20px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
+    color:#ffffff;
   }
   
   .header li a:hover,
