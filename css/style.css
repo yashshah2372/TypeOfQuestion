@@ -54,7 +54,7 @@ body{
 }
 header{
     width: 100%;
-    border: solid rgba(0, 0, 0, 0.38) 8px;
+    /* border: solid rgba(0, 0, 0, 0.38) 8px; */
 }
 .logo img{
     height: 80px;
@@ -394,10 +394,10 @@ footer h2{
         font-size: 3rem;
     }
     .head{
-        margin-left: rem;
+        justify-content: center;
     }
     .head p{
-        margin-left:18rem;
+        justify-content: center;
     }
     footer h2{
         position:absolute;
@@ -419,68 +419,90 @@ footer h2{
     }
 }
 @media only screen and (max-width: 480px){
+    body{
+        background-image: url(/images/bg.png);
+        /* background-origin: border-box; */
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        /* background-position: left; */
+        /* background-position-x: 402px;
+        background-position-y: 1000px; */
+    }
+    #full-body::before{
+        content: "";
+        background: url(/images/background.png) no-repeat center center/cover;
+        position: fixed;
+        top: 0px;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+    }
     .logo img{
         height:10rem;
-        width: 15rem;
+        width: 10rem;
         margin-right: 0!important;
     }
-    .navs{
-        display:none
-    }
-    .rectangle{
-        top: 20rem;
-        width: 15rem;
-        height: 60%;
-        left: 33%;
-    }
-    .rectangle1{
-        width: 85%;
-        height: 160%;
-        margin-top: 40%;
-        left: 0;
-        top: 35%;
-    }
-    .title{
-        padding-left: 0;
-        width: 35%;
-        margin-left: 35%;
-    }
     .head{
-        margin-top: 5rem;
-        width: 100%;
-        height: 85%;
-        margin-left: -31rem;
-    }
-    .head p span{
-        font-size: 100px!important;
-    }
-    .head p{
-        margin-left: 1rem;
-    }
-    .big-text{
-        font-size: 80px;
-    }
-    span{
-        font-size: 40px;
+        margin-top: 3rem;
+        width: 60%;
+        height: 35%;
+        left:0;
+        justify-content: center!important;
     }
     .diamond{
-        margin-left: 3rem;
+        display: flex;
+        margin-left: -11rem;
     }
     .diamond div{
-        height: 250px;
-        width: 250px;
+        position: relative;
+        color: white;
+        height: 100px;
+        width: 30px;
+        bottom: -170px;
+        line-height: 15px;
+        text-align: center;
+        margin-right: -3rem;
+    }
+    .diamond div:before {
+        position: absolute;
+        content: '';
+        top: 0px;
+        left: 0px;
+        transform: rotateX(0deg) rotateZ(0deg);
+        border: solid white 2px;
+        border-radius: 10px;
+    }
+    .head p span{
         left: 0;
-        margin-top: 14rem;
-        margin-left: 5rem;
+        justify-content: center!important;
+        font-size: 35px!important;
+    }
+    .big-text{
+        font-size: 20px;
+    }
+    .diamond{
+       justify-content: center;
+       display: flex;
+    }
+    .diamond span{
+        font-size: 12px;
+    }
+    .diamond div{
+        height: 6rem;
+        width: 3.5rem;
+        left: 0;
     }
     .date{
-        margin-top: 70rem;
+        margin-top: 30rem;
         width: 100%;
-        height: 20%;
+        height: 10%;
         margin-left: -35rem;
     }
     .date p{
-        font-size: 50px!important;
+        font-size: 25px!important;
     }
     .button{
         height: fit-content;
@@ -498,7 +520,10 @@ footer h2{
         display: flex;
     }
     .small_logo img{
+        margin-left: -6rem;
         margin-top: 9rem;
+        width: 10rem;
+        height: 10rem;
     }
     footer h2{
         position:absolute;
@@ -518,13 +543,27 @@ footer h2{
         display: inline; 
         margin: 1rem;
     }
+    .rules{
+        font-size: 1.5rem;
+        width:100%;
+        margin-left: -1.2rem;
+    }
+    .rules h2{
+        margin-left: 9rem; 
+    }
 }
 @media only screen and (max-width: 380px){
     .head{
-        margin-top: 5rem;
-        width: 100%;
-        height: 88%;
-        margin-left: -30rem;
+        margin-top: 3rem;
+        width: 60%;
+        height: 65%;
+        left:0;
+        justify-content: center!important;
+    }
+    .head p span{
+        left: 0;
+        justify-content: center!important;
+        font-size: 35px!important;
     }
     footer{
         width: 90%;
@@ -652,8 +691,7 @@ a {
   .header .menu-icon {
     cursor: pointer;
     display: inline-block;
-    float: right;
-    margin-left: -11rem;
+    margin-left: 11rem;
     margin-top: 1rem;
     padding: 15px 20px;
     position: relative;
