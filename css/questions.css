@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway',sans-serif;
+    background: url(https://josetxu.com/img/fondo_blanco.png) repeat 0 0 black;
   }
   html{
       background-color: black;
@@ -227,6 +228,10 @@ transform: rotate(-19.76deg);
       body{
           font-size: 1rem;
       }
+        .components img{
+    width:10rem;
+    margin-top: 1.5rem;
+  }
     .cardBox {
       width: 94.5%;
       margin-left: 1rem;
@@ -282,5 +287,157 @@ transform: rotate(-19.76deg);
     .footer li{
         display: inline;
         margin-left: 1rem;
+    }
+  }
+  a {
+    color: #000;
+  }
+  
+  /* header */
+  
+  .header {
+    font-size: 1.5rem;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
+    width: 85%;
+    z-index: 3;
+  }
+  
+  .header ul {
+    margin-top: 5rem;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  
+  .header li a {
+    display: block;
+    padding: 20px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+  }
+  
+  .header li a:hover,
+  .header .menu-btn:hover {
+    background-color: #F5EEDC;
+    color:black
+  }
+  
+  .header .logo {
+    display: block;
+    float: left;
+    font-size: 2rem;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+  /* menu */
+  
+  .header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+  .header li a{
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+  }
+  
+  /* menu icon */
+  
+  .header .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-left: 1rem;
+    margin-top: 5rem;
+    padding: 15px 20px;
+    position: relative;
+    user-select: none;
+  }
+  .header .menu-icon .navicon {
+    background:#fff;
+    display: block;
+    height: 2px;
+    margin-top: -7rem;
+    margin-left: -9rem;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 1rem;
+  }
+  
+  .header .menu-icon .navicon:before,
+  .header .menu-icon .navicon:after {
+    background:#fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+  }
+  
+  .header .menu-icon .navicon:before {
+    top: 5px;
+  }
+  
+  .header .menu-icon .navicon:after {
+    top: -5px;
+  }
+  
+  /* menu btn */
+  
+  .header .menu-btn {
+    display: none;
+  }
+  
+  .header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+  
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+  
+  /* 48em = 768px */
+  @media (min-width: 48em) {
+    .header {
+      font-size: 1.5rem;
+      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+      position: fixed;
+      width: 105%;
+      z-index: 3;
+    }
+    .header li {
+      float: left;
+    }
+    .header li a {
+      display: inline;
+      padding: 20px 11px;
+      background-color: black;
+      color: white;
+    }
+    .header .menu {
+      clear: none;
+      margin-left: 64rem;
+      max-height: none;
+      margin-top: -3rem;
+    }
+    .header .menu-icon {
+      display: none;
     }
   }
