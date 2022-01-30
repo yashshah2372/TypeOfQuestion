@@ -1,10 +1,11 @@
 @import "utilities.css";
 body{
-    background-image: url(/images/bg.png);
+    /* background-image: url(/images/bg.png); */
     /* background-origin: border-box; */
     position: absolute;
     height: 100%;
-    width: 1500px;
+    width: 100vw;
+    overflow-x: hidden;
     background-repeat: no-repeat;
     background-attachment: fixed;
     /* background-position: left; */
@@ -14,6 +15,8 @@ body{
 .rules h2{
    margin-left: 22rem;
 }
+
+
 .rules{
     color:#ffffff;
     margin-left: 20rem;
@@ -210,14 +213,14 @@ footer h2{
     margin-top: 2rem;
 }
 .socials ul{
-    position: absolute;
+    /* position: absolute;
     left:35%;
     text-align: center;
-    margin-top:5rem;
+    margin-top:5rem; */
 }
 .socials li{
-    display: inline; 
-    margin: 1rem;
+    /* display: inline; 
+    margin: 1rem; */
 }
 @media only screen and (max-width: 1400px){
     .logo img{
@@ -807,3 +810,5 @@ a {
       display: none;
     }
   }
+
+

@@ -14,28 +14,54 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Raleway:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/common.css">
+
     <link rel="stylesheet" href="css/utilities1.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Bree+Serif&display=swap" rel="stylesheet"> -->
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-trans">
+        <a class="navbar-brand" id="logo">
+          <img class="nav-logo" src="images/main_logo.png" alt="" />
+        </a>
 
-    <nav id="navbar">
-        <div id="logo">
-            <img src="images/main_logo.png" alt="">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse justify-content-end my-nav-links"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="questions.html">Type Of Questions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQs</a>
+            </li>
+          </ul>
         </div>
-        <header class="header">
-            <a href="" class="logo"></a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
-            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="questions.html">Type Of Questions</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-            </ul>
-        </header>
-    </nav>
+      </nav>
 
     <nav id="sidenav">
         <ul>
@@ -122,24 +148,12 @@
     </section>
     </section>
 
-    <footer>
-        <h2>CONTACT US</h2>
-        <div class="socials ">
-            <ul>
-                <li><a href="https://discord.gg/e3452fjYBP" target="_blank"><img height="30rem" src="images/discord.png"
-                            alt="Discord"></a></li>
-                <li><a href="https://www.instagram.com/cybercell_viit/" target="_blank"><img height="30rem"
-                            src="images/instagram.png" alt="Instagram"></a></li>
-                <li><a href="https://www.linkedin.com/company/cybercell-viit/" target="_blank"><img height="30rem"
-                            src="images/LinkedIn.png" alt="LinkedIn"></a></li>
-                <li><a href="https://twitter.com/cybercellviit" target="_blank"><img height="30rem"
-                            src="images/twitter.png" alt="Twitter"></a></li>
-                <li><a href="https://github.com/CybercellVIIT" target="_blank"><img height="30rem" src="images/git1.png"
-                            alt="Github"></a></li>
-            </ul>
-        </div>
-    </footer>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
