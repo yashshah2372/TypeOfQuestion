@@ -1,107 +1,281 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Raleway:wght@500;600;700&display=swap">
-    <link rel="stylesheet" href="faq.css">
-
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500;600;700&family=Raleway:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
     <title>FAQ Page</title>
 </head>
 
-<body>
-    <div class="rectangle"></div>
-    <div class="rectangle1"></div>
-    <div class="container">
-        <nav>
-            <div class="parent i-center space full">
-                <div class="logo1">
-                    <img style="height: 80px; margin-right: 3rem;margin-left:-2rem;" src="images/main_logo.png"
-                        alt="logo">
-                </div>
-                <header class="header">
-                    <a href="" class="logo"></a>
-                    <input class="menu-btn" type="checkbox" id="menu-btn" />
-                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-                    <ul class="menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="questions.html">Type Of Questions</a></li>
-                        <li><a href="faq.html">FAQ</a></li>
-                    </ul>
-                </header>
-            </div>
-        </nav>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="heading_faq">
-                    <h2>FAQ's</h2>
-                    <p></p>
-                </div>
-            </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <div class="accordian__section">
-                    <h2 class="accordion" id="section1">WHAT IS CTF?</h2>
-                    <div class="accordion-panel">
-                        <p>A capture the flag (CTF) contest is a special kind of cybersecurity competition designed to
-                            challenge its participants to solve computer security problems and/or capture and defend
-                            computer systems.</p>
-                    </div>
+<body id="full-body">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-trans">
+        <a class="navbar-brand" id="logo">
+            <img class="nav-logo" src="images/main_logo.png" alt="" />
+        </a>
 
-                    <h2 class="accordion">How to add a person to the team?</h2>
-                    <div class="accordion-panel">
-                        <p>>As according to our rules a team should own just a single account and share it with their
-                            members.</p>
-                    </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <h2 class="accordion">What should I do if I want to participate in the CTF, but I do not have any
-                        teammates
-                        ?</h2>
-                    <div class="accordion-panel">
-                        <p>Jump into our Discord and use the #finding-team channel!</p>
-                    </div>
+        <div class="collapse navbar-collapse justify-content-end my-nav-links" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="questions.html">Type Of Questions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="faq.html">FAQs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <center>
+        <div>
+            <div id="heading">Frequently Asked Questions</div>
+        </div>
+    </center>
 
-                    <h2 class="accordion" id="section4">How can I solve this CTF?</h2>
-                    <div class="accordion-panel">
-                        <p>For most of the questions in here, you can use various online tools related to that
-                            particular domain, and have a optimistic and curious mind, and you are good to go!
+    <div>
+        <div class="container-fluid">
+            <div class="row" style="padding-top: 4vw; padding-bottom: 4vw">
+                <div class="col-sm-2"></div>
+                <div class="col-sm-8">
+                    <div id="question-list">
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que1">
+                                <div class="question">What is a CTF?</div>
+                            </a>
+                            <div id="que1" class="collapse show" data-parent="#question-list">
+                                <div class="card-body">
+                                    CTF stands for "Capture the Flag". CTFs are a type of
+                                    computer security competition. Certain pieces of
+                                    information, called "flags", are placed on servers,
+                                    encrypted, hidden, or otherwise stored somewhere difficult
+                                    to access. During the competition, different challenges are
+                                    released which allow the participants to reverse engineer,
+                                    break, hack, decrypt, and do whatever it takes to capture
+                                    that flag. When a team submits this flag to a scoring page,
+                                    they will get points for the submission. To learn more,
+                                    <a href="https://www.meusec.com/ctf/capture-the-flags-in-cybersecurity/">Click
+                                        here</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que2">
+                                <div class="question">What is VishwaCTF-mini?</div>
+                            </a>
+                            <div id="que2" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    VishwaCTF-mini is the Flagship event of CyberCell, VIIT. At its
+                                    inception, it was the first CTF from Maharashtra, India and
+                                    also, the second one from India organized independently by
+                                    any college. This is now the 4th Edition of the annually
+                                    organized VishwaCTF-mini, and the first time that it is being
+                                    held globally.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que3">
+                                <div class="question">When is VishwaCTF-mini scheduled?</div>
+                            </a>
+                            <div id="que3" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    VishwaCTF-mini 2021 will start on 12th February 4:00 PM according to
+                                    IST(Indian Standard Time i.e. +5:30 GMT) and will go on live
+                                    for 24 hours and end on 13th February 4:00 PM (IST). You can
+                                    check the start timings of vishwaCTF for your local timezone
+                                    by this timestamp: 1615629600
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que4">
+                                <div class="question">Who can participate?</div>
+                            </a>
+                            <div id="que4" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    The competition is designed specially for beginners to be
+                                    able to learn various new concepts while enjoying the
+                                    competition, not being too overwhelmed with it. As such,
+                                    anyone in High-School or a higher form of education should
+                                    be able to cope fairly easily. Otherwise, any person can
+                                    participate with a basic knowledge of using a computer and
+                                    the internet for searching stuff.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que5">
+                                <div class="question">Why play/organize a CTF?</div>
+                            </a>
+                            <div id="que5" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    We love Computer Science and CTFs. Competing in CTFs is one
+                                    of our favorite things to do. Unfortunately, there aren't
+                                    many CTFs out there designed for beginners. We found that we
+                                    learned a lot about computer security very quickly by
+                                    particating in CTFs. VishwaCTF-mini will teach participants about
+                                    other areas of computer science as well. VishwaCTF-mini is meant
+                                    to follow up on the success of CTFs like picoCTF and HSCTF.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que7">
+                                <div class="question">Will it be difficult?</div>
+                            </a>
+                            <div id="que7" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    Challenges will vary widely in difficulty. We expect some
+                                    challenges to be solved by every team, and others to be
+                                    solved by only a few teams. All teams have the potential of
+                                    performing very well in this competition even with no CTF
+                                    experience. We hope VishwaCTF-mini will be a fun, learning
+                                    experience for all the participants.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que8">
+                                <div class="question">
+                                    What resources do I need to compete?
+                                </div>
+                            </a>
+                            <div id="que8" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    Full participation in the competition requires only a
+                                    computer with a Web Browser (Firefox, Chrome, Opera, Safari,
+                                    Internet Explorer 9+, etc.), an internet connection and the
+                                    ability to install applications.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que9">
+                                <div class="question">How is it scored?</div>
+                            </a>
+                            <div id="que9" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    There will be several dozen challenges, each worth an
+                                    appropriate number of points based on its difficulty. The
+                                    points of a challenge are determined by the number of
+                                    participants able to solve that challenge. For example, a
+                                    challenge with 100 solves will have lower points than one
+                                    with just 10 solves. You may read more about the Dynamic
+                                    Scoring of the CTFd platform
+                                    <a href="https://github.com/CTFd/DynamicValueChallenge">here</a>.
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Flag part 3/3 : _3_s1Des} -->
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que11">
+                                <div class="question">What constitutes cheating?</div>
+                            </a>
+                            <div id="que11" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    Participants in the CTF must abide by a few common sense
+                                    rules that ensure the competition is fair. These rules are
+                                    copied from picoCTF's FAQ: Attacking the scoring server,
+                                    other teams, or machines not explicitly designated as
+                                    targets is cheating. This includes both breaking into such
+                                    machines and denying others access to them (for example, by
+                                    altering a key or ping-flooding). Sharing keys or providing
+                                    overly-revealing hints with other teams is cheating, as is
+                                    being directly assisted by personnel outside the team (using
+                                    tools from the internet is OK; asking people on the internet
+                                    to help you solve the problem is not). We encourage you to
+                                    solve problems in novel and creative ways using all
+                                    available resources, but we do require that you solve them
+                                    yourselves.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que12">
+                                <div class="question">Who is organizing VishwaCTF-mini?</div>
+                            </a>
+                            <div id="que12" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    VishwaCTF-mini is organized by students of Vishwakarma Institute
+                                    of Information Technology, Pune, India as part of the
+                                    CyberCell club of the college.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <a class="collapsed card-link" data-toggle="collapse" href="#que13">
+                                <div class="question">
+                                    Are there any related competitions?
+                                </div>
+                            </a>
+                            <div id="que13" class="collapse" data-parent="#question-list">
+                                <div class="card-body">
+                                    VishwaCTF-mini is just an introduction to basic ctfs and what they are in general.
+                                    Apart from that, we host VishwaCTF in mid March, so you can participate in the
+                                    same!!
+                                    Also,Look at picoCTF, organized by Carnegie Mellon
+                                    University, or CSAW RED, organized by the New York
+                                    University Tandon School of Engineering, or HSCTF, organized
+                                    by the West Windsor-Plainsboro High School North, New
+                                    Jersey.
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <footer>
-
-            <div class="socials">
-                <h2> CONTACT US</h2>
-                <div class="social-links">
-                    <ul>
-                        <li><a href="https://discord.gg/e3452fjYBP" target="_blank"><img height="22rem"
-                                    src="images/discord.png" alt="Discord"></a></li>
-                        <li><a href="https://www.instagram.com/cybercell_viit/" target="_blank"><img height="22rem"
-                                    src="images/instagram.png" alt="Instagram"></a></li>
-                        <li><a href="https://www.linkedin.com/company/cybercell-viit/" target="_blank"><img
-                                    height="22rem" src="images/LinkedIn.png" alt="LinkedIn"></a></li>
-                        <li><a href="https://twitter.com/cybercellviit" target="_blank"><img height="22rem"
-                                    src="images/twitter.png" alt="Twitter"></a></li>
-                        <li><a href="https://github.com/CybercellVIIT" target="_blank"><img height="22rem"
-                                    src="images/git1.png" alt="Github"></a></li>
-                    </ul>
+    </div>
+    <div>
+        <center id="lab_social_icon_footer">
+            <div>
+                <div class="text-center center-block">
+                    <a href="https://www.linkedin.com/company/cybercell-viit/" target="_blank"><i id="social-fb"
+                            class="fa fa-linkedin-square fa-3x social"></i></a>
+                    <a href="https://twitter.com/cybercellviit" target="_blank"><i id="social-tw"
+                            class="fa fa-twitter-square fa-3x social"></i></a>
+                    <a href="https://github.com/CybercellVIIT" target="_blank"><i id="social-gp"
+                            class="fa fa-github-square fa-3x social"></i></a>
+                    <a href="mailto:vipulpr88@gmail.com" target="_blank"><i id="social-em"
+                            class="fa fa-envelope-square fa-3x social"></i></a>
+                    <a href="https://www.instagram.com/cybercell_viit/" target="_blank"><i id="social-in"
+                            class="fa fa-instagram fa-3x social"></i></a>
                 </div>
             </div>
-        </footer>
-        <script type="text/javascript" src="faq.js"></script>
+        </center>
+    </div>
+    <script type="text/javascript" src="faq.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 
 </html>
