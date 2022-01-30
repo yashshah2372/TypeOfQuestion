@@ -786,11 +786,11 @@ footer h2{
     #firstblock{
         height: 95%;
         width: 150%;
-        position:relative;
+        position:absolute;
         border-radius: 10px;
         background-color: rgba(0, 0, 0, 0.493);
         line-height: 37px;
-        margin-top: 30rem;
+        margin-top: 60rem;
         margin-left: -4rem;
         font-weight: normal;
         font-size: 20px;
