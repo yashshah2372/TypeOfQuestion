@@ -85,6 +85,7 @@ color: #FFFFFF;
 }
   
   .cardBox {
+    -webkit-transition: -webkit-transform 1s;
     float: left;
     font-size: 1.2em;
     margin: 1% 0 0 1%;
@@ -103,6 +104,7 @@ color: #FFFFFF;
   
   .card {
     cursor: default;
+    -webkit-transition: -webkit-transform 1s;
     height: 300px;
     transform-style: preserve-3d;
     transition: transform 0.4s ease 0s;
@@ -212,6 +214,7 @@ color: #FFFFFF;
           font-size: 1rem;
       }
     .cardBox {
+      
       margin-left: 2.8%;
       margin-top: 3%;
       width: 46%;
