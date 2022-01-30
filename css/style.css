@@ -141,7 +141,7 @@ header nav .space{
     height: 56px;
     bottom: 190px;
     left: 545px;
-    top:68%;
+    top:62%;
     background: rgba(0, 0, 0, 0.39);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -152,7 +152,7 @@ header nav .space{
     text-align: center;
 }
 .button {
-    position: absolute;
+    position:relative;
     cursor: pointer;
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
@@ -160,11 +160,12 @@ header nav .space{
     font-family: Josefin Sans;
     color: #ffffff;
     font-size: 20px;
-    left: 605px;
-    top:77%;
+    left: 36rem;
+    top:50%;
     height: 10px;
     bottom: 140px;
-    background: #000000;
+    background:aliceblue;
+    color: black;
     padding: 10px 20px 27px 20px;
     border: solid #000000 1px;
     text-decoration: none;
@@ -173,7 +174,7 @@ header nav .space{
       margin-top: -0rem;
   }
   .button1 {
-    position: absolute;
+    position: relative;
     cursor: pointer;
     -webkit-border-radius: 10;
     -moz-border-radius: 10;
@@ -182,10 +183,11 @@ header nav .space{
     color: #ffffff;
     font-size: 20px;
     left: 41rem;
-    top:77%;
+    top:50%;
     height: 10px;
     bottom: 140px;
-    background: #000000;
+    background: aliceblue;
+    color: black;
     padding: 10px 20px 27px 20px;
     border: solid #000000 1px;
     text-decoration: none;
@@ -194,7 +196,7 @@ header nav .space{
       margin-top: -0rem;
   }
 footer{
-    position: absolute;
+    position: relative;
     margin-top: 20rem;
     width: 100%;
     height: 120px;
@@ -202,7 +204,7 @@ footer{
 }
 footer h2{
     position:absolute;
-    left:44%;
+    left:45%;
     font-size: 2rem;
     color: white;
     margin-top: 2rem;
@@ -235,11 +237,6 @@ footer h2{
         color: #ff7a59;
         border: #ff7a59 solid 1px;
         background:#fff;
-    }
-    footer{
-        width: 90%;
-        margin-top:110vh;
-        display: flex;
     }
     .button{
         height: fit-content;
@@ -303,16 +300,21 @@ footer h2{
     .head p{
         margin-left: 3rem;
     }
+    footer{
+        width: 100%;
+        margin-top:110vh;
+        display: flex;
+    }
     footer h2{
-        position:absolute;
-        left:47%;
-        font-size: 5rem;
+        position:relative;
+        left:52%;
+        font-size: 3rem;
         color: white;
-        margin-top: -1rem;
+        margin-top: 1rem;
     }
     .socials ul{
         position: absolute;
-        left:49%;
+        left:47%;
         text-align: center;
         margin-top:7rem;
         margin-bottom: 2rem;
@@ -342,7 +344,7 @@ footer h2{
         background:#fff;
     }
     footer{
-        width: 90%;
+        width: 100%;
         margin-top:110vh;
         display: flex;
     }
@@ -400,18 +402,19 @@ footer h2{
         justify-content: center;
     }
     footer h2{
-        position:absolute;
-        left:47%;
-        font-size: 5rem;
+        position:relative;
+        left:50%;
+        text-align: center;
+        font-size: 3rem;
         color: white;
-        margin-top: -1rem;
+        margin-top: 2rem;
     }
     .socials ul{
-        position: absolute;
-        left:49%;
-        text-align: center;
+        position: relative;
         margin-top:7rem;
         margin-bottom: 2rem;
+        display: flex;
+        margin-left: 7rem;
     }
     .socials li{
         display: inline; 
@@ -447,10 +450,9 @@ footer h2{
     }
     .head{
         margin-top: 3rem;
-        width: 60%;
+        width: 65%;
         height: 35%;
-        left:0;
-        justify-content: center!important;
+        left:10%;
     }
     .diamond{
         display: flex;
@@ -506,17 +508,33 @@ footer h2{
     }
     .button{
         height: fit-content;
-        left: 35%;
-        margin-top: 77rem;
-        width: 16rem;
-        height: 10rem;
+        left: 10%;
+        margin-top: 5rem;
+        width: 6rem;
+        height: 3rem;
     }
     .button p{
-        font-size:3.2rem;
+        white-space: nowrap;
+        margin-left: -0.6rem;
+        font-size:1.2rem;
+        margin-top: -0rem;
+    }
+    .button1{
+        height: fit-content;
+        left: 30%;
+        margin-top: 5rem;
+        width: 7.5rem;
+        height: 3rem;
+    }
+    .button1 p{
+        white-space: nowrap;
+        margin-left: -0.6rem;
+        font-size:1.2rem;
+        margin-top: -0rem;
     }
     footer{
         width: 90%;
-        margin-top:215vh;
+        margin-top:50vh;
         display: flex;
     }
     .small_logo img{
@@ -525,16 +543,21 @@ footer h2{
         width: 10rem;
         height: 10rem;
     }
+    footer{
+        width: 90%;
+        margin-top:50vh;
+        display: flex;
+    }
     footer h2{
-        position:absolute;
-        left:37%;
-        font-size: 5rem;
+        position:relative;
+        left: 26%;
+        font-size: 2rem;
         color: white;
-        margin-top: -7rem;
+        margin-top: -2rem;
     }
     .socials ul{
-        position: absolute;
-        left:38%;
+        position: relative;
+        margin-left: -18rem;
         text-align: center;
         margin-top:2rem;
         margin-bottom: 2rem;
@@ -555,10 +578,16 @@ footer h2{
 @media only screen and (max-width: 380px){
     .head{
         margin-top: 3rem;
-        width: 60%;
-        height: 65%;
-        left:0;
+        width: 65%;
+        height: 35%;
+        left:10%;
         justify-content: center!important;
+    }
+    .date{
+        margin-top: 30rem;
+        width: 100%;
+        height: 10%;
+        margin-left: -34.5rem;
     }
     .head p span{
         left: 0;
@@ -567,26 +596,22 @@ footer h2{
     }
     footer{
         width: 90%;
-        height:40%;
-        margin-top:215vh;
+        margin-top:50vh;
+        display: flex;
     }
     footer h2{
-        position:absolute;
-        left:37%;
-        font-size: 5rem;
+        position:relative;
+        left: 26%;
+        font-size: 2rem;
         color: white;
-        margin-top: 4rem;
+        margin-top: -2rem;
     }
     .socials ul{
-        position: absolute;
-        left:38%;
+        position: relative;
+        margin-left: -18rem;
         text-align: center;
-        margin-top:11rem;
+        margin-top:2rem;
         margin-bottom: 2rem;
-    }
-    .socials li{
-        display: inline; 
-        margin: 1rem;
     }
 }
 @media only screen and (max-width: 320px){
