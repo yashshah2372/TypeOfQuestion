@@ -99,7 +99,7 @@ color: #FFFFFF;
   background:#fff;
 }  
 .card1Box:hover .card1 {
-  transform: rotateY( 180deg);
+  transform: rotateY( 360deg);
 }
 
 .card1 {
@@ -141,7 +141,7 @@ color: #FFFFFF;
 }
 
 .card1 .back {
-  transform: rotateY( 180deg);
+  transform: rotateY( -180deg);
 }
 
 .card1 .back a {
