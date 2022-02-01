@@ -125,6 +125,7 @@ color: #FFFFFF;
   font-size: 1.2em;
   height: 100%;
   padding: 0.8em;
+  transform: rotateX(0deg);
   position: absolute;
   text-align: center;
   width: 100%;
